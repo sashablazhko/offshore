@@ -32,7 +32,9 @@ gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		// 'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
 		// 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
-		'node_modules/jquery/dist/jquery.js' // Берем jQuery
+		'app/libs/core.min.js'
+		// 'node_modules/slick-carousel/slick/slick.js'
+		// 'node_modules/jquery/dist/jquery.js' // Берем jQuery
     // 'node_modules/bootstrap/dist/js/bootstrap.js'
 		// 'node_modules/slick-carousel/slick/slick.js'
 		])
@@ -58,18 +60,18 @@ gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('img', function() {
-	return gulp.src('app/img/**/*') // Берем все изображения из app
+gulp.task('images', function() {
+	return gulp.src('app/images/**/*') // Берем все изображения из app
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		})))
-		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
+		.pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'images', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',
