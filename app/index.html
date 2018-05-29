@@ -122,56 +122,7 @@
                 </div>
                 <div class="rd-navbar-aside">
                   <div class="rd-navbar-aside-item">
-                    <button class="button button-xs button-primary-outline button-icon button-icon-left button-anorak rd-navbar-popup-toggle" data-rd-navbar-toggle="#rd-navbar-register"><span class="icon mdi mdi-account"></span>Sign Up</button>
-                    <div class="rd-navbar-popup bg-gray-100" id="rd-navbar-register">
-                      <h5 class="rd-navbar-popup-title">Sign Up</h5>
-                      <form class="rd-form rd-mailform form-compact" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-register-name" type="text" name="username" data-constraints="@Required"/>
-                          <label class="form-label" for="rd-navbar-register-name">Username</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-register-email" type="email" name="email" data-constraints="@Email @Required"/>
-                          <label class="form-label" for="rd-navbar-register-email">E-mail</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-register-password" type="password" name="password" data-constraints="@Required"/>
-                          <label class="form-label" for="rd-navbar-register-password">Password</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-register-password-confirm" type="password" name="password-confirm" data-constraints="@Required"/>
-                          <label class="form-label" for="rd-navbar-register-password-confirm">Confirm Password </label>
-                        </div>
-                        <div class="form-wrap">
-                          <button class="button button-block button-primary button-anorak" type="submit">Create an Account</button>
-                        </div>
-                        <div class="form-wrap form-wrap-ally">
-                          <div class="text-decoration-lines rd-navbar-popup-title"><span class="text-decoration-lines-content">or enter with</span></div>
-                        </div>
-                        <div class="form-wrap form-wrap-ally">
-                          <div class="button-group"><a class="button button-facebook button-icon button-icon-only button-winona" href="#" aria-label="Facebook"><span class="icon mdi mdi mdi-facebook"></span></a><a class="button button-twitter button-icon button-icon-only button-winona" href="#" aria-label="Twitter"><span class="icon mdi mdi-twitter"></span></a><a class="button button-google button-icon button-icon-only button-winona" href="#" aria-label="Google+"><span class="icon mdi mdi-google"></span></a></div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="rd-navbar-aside-item">
-                    <button class="button button-xs button-primary button-icon button-icon-left button-anorak rd-navbar-popup-toggle" data-rd-navbar-toggle="#rd-navbar-login"><span class="icon mdi mdi-import"></span>Login</button>
-                    <div class="rd-navbar-popup bg-gray-100" id="rd-navbar-login">
-                      <h5 class="rd-navbar-popup-title">Login</h5>
-                      <form class="rd-form form-compact">
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-login-email" type="email" name="email" data-constraints="@Email @Required"/>
-                          <label class="form-label" for="rd-navbar-login-email">E-mail</label>
-                        </div>
-                        <div class="form-wrap">
-                          <input class="form-input" id="rd-navbar-login-password" type="password" name="password" data-constraints="@Required"/>
-                          <label class="form-label" for="rd-navbar-login-password">Password</label>
-                        </div>
-                        <div class="form-wrap">
-                          <button class="button button-block button-primary button-anorak" type="submit">Login</button>
-                        </div>
-                      </form>
-                    </div>
+                    <button class="button button-xs button-primary button-icon button-icon-left button-anorak rd-navbar-popup-toggle" data-rd-navbar-toggle="#rd-navbar-login"><span class="icon mdi fa-envelope-o"></span>Написать нам</button>
                   </div>
                 </div>
               </div>
@@ -187,22 +138,13 @@
           </div>
           <div class="container">
             <div class="jumbotron-classic-header">
-              <h2 class="font-weight-light">Place Where Opportunities are Found</h2>
+              <h2 class="font-weight-light">Границ не существует</h2>
             </div>
             <div class="jumbotron-classic-main">
               <form class="form-layout-search form-lg">
                 <div class="form-wrap form-wrap-icon">
                   <input class="form-input" id="form-keywords" type="text" name="keywords" data-constraints="@Required">
                   <label class="form-label" for="form-keywords">Keywords</label><span class="icon fl-bigmug-line-search74"></span>
-                </div>
-                <div class="form-wrap form-wrap-icon form-wrap-select">
-                  <!-- Select 2-->
-                  <select class="form-input select" id="form-region" data-placeholder="All Regions" name="region" data-minimum-results-for-search="Infinity" data-constraints="@Selected">
-                    <option label="All Regions"></option>
-                    <option value="1">Seattle</option>
-                    <option value="2">Miami</option>
-                    <option value="3">Chicago</option>
-                  </select><span class="icon fl-bigmug-line-big104"></span>
                 </div>
                 <div class="form-wrap form-wrap-button form-wrap-button-search-md-lg">
                   <button class="button button-lg button-primary" type="submit">Search</button>
@@ -212,34 +154,74 @@
           </div>
         </div>
       </section>
+      <!-- Contacts -->
+      <section class="section section-md bg-gray-100 custom-contacts">
+        <div class="container text-center">
+          <h3>Контактные данные наших представительств</h3>
+          <div class="row row-eq-height row-30 list-progress">
+            <div class="col-sm-6 col-md-12 col-xl-3 height-fill align-items-center">
+              <article class="box-info-3">
+                <h6 class="lp-item-title">Центральный офис</h6>
+                <p>Адрес: 69035 г. Запорожье ул. Леонида Жаботинского 39, оф.5</p>
+                <p><a href="tel:066-932-40-98">Телефон: (050)486-12-62</a></p>
+                <p><a href="info@ua-offshore.com">E-mail: info@ua-offshore.com</a></p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="lp-item">
+                <h6 class="lp-item-title">Представительство в Киеве</h6>
+                <p>Адрес: Киев ул. Выборгская д.94 оф.201</p>
+                <p><a href="tel:066-932-40-98">Телефон: (066)-932-40-98</a></p>
+                <p><a href="kiev@ua-offshore.com">E-mail: kiev@ua-offshore.com</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="lp-item">
+                <h6 class="lp-item-title">Представительство в Луцке</h6>
+                <p>Адрес: Луцк проспект Воли д.44 оф.3</p>
+                <p><a href="tel:066-932-40-98">Телефон: (0332)24-35-40</a></p>
+                <p><a href="lutsk@ua-offshore.com">E-mail: lutsk@ua-offshore.com</a></p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-xl-3">
+              <div class="lp-item">
+                <h6 class="lp-item-title">Представительство в Xарькове</h6>
+                <p>Адрес: Xарьков ул. Сумская д.19 оф.</p>
+                <p><a href="tel:066-932-40-98">Телефон: (066)327-31-86</a></p>
+                <p><a href="kharkiv@ua-offshore.com">E-mail: kharkiv@ua-offshore.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Popular Categories-->
-      <section class="section section-md text-center">
+      <section class="section section-md text-center custom-price">
         <div class="container">
-          <h3>Popular Categories  </h3>
+          <h3>Стоимость открытия компании</h3>
           <p>More than 137 new jobs every day</p>
           <div class="row row-30">
             <div class="col-md-4">
               <ul class="list-block">
-                <li><a href="job-listing-full.html"><span class="list-block-title">Accounting & Finance</span><span class="list-block-meta">2590</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Information Technology </span><span class="list-block-meta">3567</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Real Estate</span><span class="list-block-meta">4235</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Motoring & Automotive</span><span class="list-block-meta">234</span></a></li>
+                <li><a href="#"><span class="list-block-title">Швеция (KB)</span><span class="list-block-meta">2590</span></a></li>
+                <li><a href="#"><span class="list-block-title">Шотландия (LP)</span><span class="list-block-meta">3567</span></a></li>
+                <li><a href="#"><span class="list-block-title">Канада (LP)</span><span class="list-block-meta">4235</span></a></li>
+                <li><a href="#"><span class="list-block-title">Канада (LLP)</span><span class="list-block-meta">234</span></a></li>
               </ul>
             </div>
             <div class="col-md-4">
               <ul class="list-block">
-                <li><a href="job-listing-full.html"><span class="list-block-title">Construction</span><span class="list-block-meta">1467</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Design & Art </span><span class="list-block-meta">890</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Sales & Marketing</span><span class="list-block-meta">1214</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Other Jobs</span><span class="list-block-meta">1235</span></a></li>
+                <li><a href="#"><span class="list-block-title">Construction</span><span class="list-block-meta">1467</span></a></li>
+                <li><a href="#"><span class="list-block-title">Design & Art </span><span class="list-block-meta">890</span></a></li>
+                <li><a href="#"><span class="list-block-title">Sales & Marketing</span><span class="list-block-meta">1214</span></a></li>
+                <li><a href="#"><span class="list-block-title">Other Jobs</span><span class="list-block-meta">1235</span></a></li>
               </ul>
             </div>
             <div class="col-md-4">
               <ul class="list-block">
-                <li><a href="job-listing-full.html"><span class="list-block-title">Healthcare</span><span class="list-block-meta">1653</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Social Media</span><span class="list-block-meta">453</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Food Service</span><span class="list-block-meta">234</span></a></li>
-                <li><a href="job-listing-full.html"><span class="list-block-title">Logistics</span><span class="list-block-meta">234</span></a></li>
+                <li><a href="#"><span class="list-block-title">Healthcare</span><span class="list-block-meta">1653</span></a></li>
+                <li><a href="#"><span class="list-block-title">Social Media</span><span class="list-block-meta">453</span></a></li>
+                <li><a href="#"><span class="list-block-title">Food Service</span><span class="list-block-meta">234</span></a></li>
+                <li><a href="#"><span class="list-block-title">Logistics</span><span class="list-block-meta">234</span></a></li>
               </ul>
             </div>
             <div class="col-12">
@@ -251,10 +233,224 @@
                   </svg>
                 </div>
                 <div class="promo-search-main">
-                  <h4 class="promo-search-title">Browse more than 20 000 current vacancies</h4>
-                  <div class="promo-search-item"><a class="button button-lg button-primary" href="job-listing-full.html">Browse all categories</a></div>
+                  <h4 class="promo-search-title">Стоимость открытия банковского счета</h4>
+                  <div class="promo-search-item"><a class="button button-lg button-primary" href="#">Перейти</a></div>
                 </div>
               </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Subscribe Parallax-->
+      <section class="section parallax-container section-md bg-gray-700 bg-overlay-5 text-center" data-parallax-img="images/parallax-3.jpg">
+        <div class="parallax-content">
+          <div class="container">
+            <div class="block-2">
+              <h3>Будь в курсепоследних новостей</h3>
+              <p class="text-spacing-05">Sign up to our newsletter and be the first to know about the latest company news.</p>
+              <!-- RD Mailform-->
+              <form class="rd-form rd-mailform form-lg form-filled form-inline form-inline_condensed" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <input class="form-input" id="subscribe-form-email" type="email" name="email" data-constraints="@Email @Required">
+                  <label class="form-label" for="subscribe-form-email">E-mail</label>
+                </div>
+                <div class="form-button">
+                  <button class="button button-blue-9 button-form-indicator button-icon-only" type="submit" aria-label="subscribe"><span class="icon form-icon-default icon-lg fl-bigmug-line-paper122"></span><span class="icon form-icon-success icon-lg mdi mdi-check"></span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- News -->
+      <section class="section section-md bg-gray-100">
+        <div class="container">
+          <h3 class="text-center">Последние новоси</h3>
+          <div class="row row-eq-height row-30 row-xl-70">
+            <div class="col-12 col-lg-4">
+              <!-- Post Modern-->
+              <article class="post-modern"><a class="post-modern-media" href="blog-post.html"><img class="post-modern-image" src="images/blog-1-369x253.jpg" alt=""/></a>
+                <div class="post-modern-main">
+                  <h5 class="post-modern-title"><a href="blog-post.html">The Future of Work for Americans The Future of Work for Americans</a></h5>
+                  <hr/>
+                  <ul class="post-modern-meta">
+                    <li><a href="blog-post.html">
+                        <time datetime="2018">Nov 23, 2018</time></a></li>
+                    <li><a href="blog-post.html"><span>3 Comments</span></a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <!-- Post Modern-->
+              <article class="post-modern"><a class="post-modern-media" href="blog-post.html"><img class="post-modern-image" src="images/blog-2-369x253.jpg" alt=""/></a>
+                <div class="post-modern-main">
+                  <h5 class="post-modern-title"><a href="blog-post.html">How to Find</a></h5>
+                  <hr/>
+                  <ul class="post-modern-meta">
+                    <li><a href="blog-post.html">
+                        <time datetime="2018">Nov 23, 2018</time></a></li>
+                    <li><a href="blog-post.html"><span>3 Comments</span></a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-lg-4">
+              <!-- Post Modern-->
+              <article class="post-modern"><a class="post-modern-media" href="blog-post.html"><img class="post-modern-image" src="images/blog-3-369x253.jpg" alt=""/></a>
+                <div class="post-modern-main">
+                  <h5 class="post-modern-title"><a href="blog-post.html">Searching for Job When You Have No Time</a></h5>
+                  <hr/>
+                  <ul class="post-modern-meta">
+                    <li><a href="blog-post.html">
+                        <time datetime="2018">Nov 23, 2018</time></a></li>
+                    <li><a href="blog-post.html"><span>3 Comments</span></a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Slider -->
+      <section class="section section-md text-center custom-slider">
+        <div class="container">
+          <h3>Готовое предложение</h3>
+          <!-- Slick Carousel-->
+          <div class="slick-slider-2">
+            <div class="slick-slider carousel-parent" id="parent-carousel" data-autoplay="true" data-autoplay-speed="4000" data-fade="true" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+              <div class="item">
+                <div class="slick-2-item">
+                  <div class="slick-2-item-main">
+                    <!-- Quote Modern-->
+                    <blockquote class="quote-modern">
+                      <div class="quote-modern-header">
+                        <h5 class="quote-modern-cite">Оффшор на Кипре LTD</h5>
+                      </div>
+                      <div class="quote-modern-text">
+                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
+                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
+                        </svg>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, aliquid excepturi. Ipsum autem aperiam saepe vel quae, beatae fugiat, eius id omnis nisi consequuntur quaerat at doloribus eligendi. Similique tempora magnam libero aliquam.</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="slick-2-item-figure"><img src="images/flag1.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-2-item">
+                  <div class="slick-2-item-main">
+                    <!-- Quote Modern-->
+                    <blockquote class="quote-modern">
+                      <div class="quote-modern-header">
+                        <h5 class="quote-modern-cite">Оффшор на Кипре LTD</h5>
+                      </div>
+                      <div class="quote-modern-text">
+                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
+                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
+                        </svg>
+                        <p>I found a job as a Web Developer and applied through my iPhone with the WorkPlace app! It’s very easy to search for jobs and apply in one tap/click.</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="slick-2-item-figure"><img src="images/flag2.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-2-item">
+                  <div class="slick-2-item-main">
+                    <!-- Quote Modern-->
+                    <blockquote class="quote-modern">
+                      <div class="quote-modern-header">
+                        <h5 class="quote-modern-cite">Оффшор на Кипре LTD</h5>
+                      </div>
+                      <div class="quote-modern-text">
+                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
+                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
+                        </svg>
+                        <p>After only 3 weeks of becoming a member at WorkPlace, I received 4 job offers, I am now utilizing my skills at a job in the Antelope Valley.</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="slick-2-item-figure"><img src="images/flag3.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-2-item">
+                  <div class="slick-2-item-main">
+                    <!-- Quote Modern-->
+                    <blockquote class="quote-modern">
+                      <div class="quote-modern-header">
+                        <h5 class="quote-modern-cite">Оффшор на Кипре LTD</h5>
+                      </div>
+                      <div class="quote-modern-text">
+                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
+                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
+                        </svg>
+                        <p>After posting my resume within a couple of days I had possible employers contacting me. After several interviews I decided to accept a position located nearby.</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="slick-2-item-figure"><img src="images/flag4.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-2-item">
+                  <div class="slick-2-item-main">
+                    <!-- Quote Modern-->
+                    <blockquote class="quote-modern">
+                      <div class="quote-modern-header">
+                        <h5 class="quote-modern-cite">Оффшор на Кипре LTD</h5>
+                      </div>
+                      <div class="quote-modern-text">
+                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
+                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
+                        </svg>
+                        <p>After months of flooding my resume and CV out on the internet, applying here and other places, I finally found a job that fit my requirements.</p>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="slick-2-item-figure"><img src="images/flag5.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slider carousel-child" id="child-carousel" data-for="#parent-carousel" data-loop="false" data-arrows="false" data-dots="false" data-swipe="true" data-items="3" data-sm-items="4" data-md-items="5" data-lg-items="5" data-xl-items="5" data-slide-to-scroll="1">
+              <div class="item">
+                <div class="slick-slide-inner">
+                  <div class="slick-slide-figure"><img src="images/flag1.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-slide-inner">
+                  <div class="slick-slide-figure"><img src="images/flag2.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-slide-inner">
+                  <div class="slick-slide-figure"><img src="images/flag3.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-slide-inner">
+                  <div class="slick-slide-figure"><img src="images/flag4.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="slick-slide-inner">
+                  <div class="slick-slide-figure"><img src="images/flag5.jpg" alt=""/>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -516,148 +712,6 @@
           </div>
         </div>
       </section>
-      <section class="section section-md text-center">
-        <div class="container">
-          <h3>Success Stories</h3>
-          <!-- Slick Carousel-->
-          <div class="slick-slider-2">
-            <div class="slick-slider carousel-parent" id="parent-carousel" data-autoplay="true" data-autoplay-speed="4000" data-fade="true" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
-              <div class="item">
-                <div class="slick-2-item">
-                  <div class="slick-2-item-main">
-                    <!-- Quote Modern-->
-                    <blockquote class="quote-modern">
-                      <div class="quote-modern-header">
-                        <h5 class="quote-modern-cite">John Salley</h5><span class="badge">Helicopter Pilot</span>
-                      </div>
-                      <div class="quote-modern-text">
-                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
-                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
-                        </svg>
-                        <p>Thanks to WorkPlace, I applied and instantly received an interview opportunity. Within a few days, I was hired. This was the easiest experience.</p>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <div class="slick-2-item-figure"><img src="images/slick-2-testimonials-1-371x328.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-2-item">
-                  <div class="slick-2-item-main">
-                    <!-- Quote Modern-->
-                    <blockquote class="quote-modern">
-                      <div class="quote-modern-header">
-                        <h5 class="quote-modern-cite">Jane Wilson</h5><span class="badge">Web developer</span>
-                      </div>
-                      <div class="quote-modern-text">
-                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
-                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
-                        </svg>
-                        <p>I found a job as a Web Developer and applied through my iPhone with the WorkPlace app! It’s very easy to search for jobs and apply in one tap/click.</p>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <div class="slick-2-item-figure"><img src="images/slick-2-testimonials-2-371x328.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-2-item">
-                  <div class="slick-2-item-main">
-                    <!-- Quote Modern-->
-                    <blockquote class="quote-modern">
-                      <div class="quote-modern-header">
-                        <h5 class="quote-modern-cite">Bill Smith</h5><span class="badge">Web Designer</span>
-                      </div>
-                      <div class="quote-modern-text">
-                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
-                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
-                        </svg>
-                        <p>After only 3 weeks of becoming a member at WorkPlace, I received 4 job offers, I am now utilizing my skills at a job in the Antelope Valley.</p>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <div class="slick-2-item-figure"><img src="images/slick-2-testimonials-3-371x328.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-2-item">
-                  <div class="slick-2-item-main">
-                    <!-- Quote Modern-->
-                    <blockquote class="quote-modern">
-                      <div class="quote-modern-header">
-                        <h5 class="quote-modern-cite">Ann Lee</h5><span class="badge">Pediatrician</span>
-                      </div>
-                      <div class="quote-modern-text">
-                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
-                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
-                        </svg>
-                        <p>After posting my resume within a couple of days I had possible employers contacting me. After several interviews I decided to accept a position located nearby.</p>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <div class="slick-2-item-figure"><img src="images/slick-2-testimonials-4-371x328.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-2-item">
-                  <div class="slick-2-item-main">
-                    <!-- Quote Modern-->
-                    <blockquote class="quote-modern">
-                      <div class="quote-modern-header">
-                        <h5 class="quote-modern-cite">Will Hanson</h5><span class="badge">Taxi driver</span>
-                      </div>
-                      <div class="quote-modern-text">
-                        <svg class="quote-modern-mark" version="1.1" x="0px" y="0px" viewbox="0 0 36 28" width="38" height="28">
-                          <path d="M13,0l-2.4,13.3H15V28H0V13.1L4,0H13z M34,0l-2.4,13.3H36V28H20.9V13.1L25,0H34z"></path>
-                        </svg>
-                        <p>After months of flooding my resume and CV out on the internet, applying here and other places, I finally found a job that fit my requirements.</p>
-                      </div>
-                    </blockquote>
-                  </div>
-                  <div class="slick-2-item-figure"><img src="images/slick-2-testimonials-5-371x328.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slick-slider carousel-child" id="child-carousel" data-for="#parent-carousel" data-loop="false" data-arrows="false" data-dots="false" data-swipe="true" data-items="3" data-sm-items="4" data-md-items="5" data-lg-items="5" data-xl-items="5" data-slide-to-scroll="1">
-              <div class="item">
-                <div class="slick-slide-inner">
-                  <div class="slick-slide-figure"><img src="images/slick-2-testimonials-1-73x73.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-slide-inner">
-                  <div class="slick-slide-figure"><img src="images/slick-2-testimonials-2-73x73.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-slide-inner">
-                  <div class="slick-slide-figure"><img src="images/slick-2-testimonials-3-73x73.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-slide-inner">
-                  <div class="slick-slide-figure"><img src="images/slick-2-testimonials-4-73x73.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="slick-slide-inner">
-                  <div class="slick-slide-figure"><img src="images/slick-2-testimonials-5-73x73.jpg" alt=""/>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- Pricing-->
       <section class="section parallax-container section-md bg-gray-700 bg-overlay-2" data-parallax-img="images/parallax-2.jpg">
         <div class="parallax-content">
@@ -857,23 +911,6 @@
           </div>
         </div>
       </footer>
-    </div>
-    <!-- PANEL-->
-    <div class="layout-panel-wrap" id="layout-panel-wrap">
-      <div class="layout-panel">
-        <button class="layout-panel-toggle" data-custom-toggle="#layout-panel-wrap"><span></span></button>
-        <div class="layout-panel-content"> 
-          <p class="layout-panel-title">Choose Color Scheme</p>
-          <div class="theme-switcher-group">
-            <button class="theme-switcher-group-item" data-theme-name="default"><span></span>Default</button>
-            <button class="theme-switcher-group-item" data-theme-name="style-1"><span></span>Style 1</button>
-            <button class="theme-switcher-group-item" data-theme-name="style-2"><span></span>Style 2</button>
-            <button class="theme-switcher-group-item" data-theme-name="style-3"><span></span>Style 3</button>
-            <button class="theme-switcher-group-item" data-theme-name="style-4"><span></span>Style 4</button>
-            <button class="theme-switcher-group-item" data-theme-name="style-5"><span></span>Style 5</button>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/libs.js"></script>
