@@ -2562,24 +2562,51 @@ html a.icon-filled-brand:active, html a.icon-filled-brand:focus, html a.icon-fil
 }
 
 .table-job-offers-main {
-	min-width: 360px;
-	width: 71.5%;
+	min-width: 245px;
+
+	& h6{
+		font-weight: bold;
+	}
+	// width: 71.5%;
+}
+
+.table-job-offers-desc{
+	min-width: 398px;
 }
 
 .table-job-offers-date:first-child {
 	width: 16%;
-	padding: 0;
+	min-width: 112px;
 }
 
 .table-job-offers-date:first-child > * {
 	display: block;
-	padding: 16px 18px 16px 30px;
-	border-right: 1px solid #d6d6d6;
+	padding: 0;
 }
 
 .table-job-offers-date,
 .table-job-offers-meta .object-inline > * {
 	white-space: nowrap;
+}
+
+.offshoreslist .object-inline .object-inline-discription{
+	word-wrap: normal;
+}
+
+.offshoreslist .table-job-offers-meta .object-inline span {
+	white-space: normal;
+}
+
+.offshoreslist .table tr td{
+	border: none;
+	vertical-align: inherit;
+}
+
+.offshoreslist .table-job-offers tr:hover{
+	background: #f3f4f9;
+	-webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.15);
+	border-color: #f3f4f9;
 }
 
 .table-job-offers-badge {
@@ -2595,6 +2622,14 @@ html a.icon-filled-brand:active, html a.icon-filled-brand:focus, html a.icon-fil
 .table-job-offers-outer + .pagination-outer,
 .table-job-offers + .pagination-outer {
 	margin-top: 40px;
+}
+
+.offshoresblock .post-classic{
+	height: 100%;
+}
+
+.offshoresblock .post-classic h5{
+	font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -9809,6 +9844,10 @@ html [class*='section-'].section-bottom-0 {
 
 .object-inline > * + * {
 	margin-left: 5px;
+}
+
+.object-inline-price{
+	white-space: nowrap;
 }
 
 .object-inline .icon-1,
@@ -18479,6 +18518,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .offshoreslist{
 	padding-top: 0;
+}
+
+.offshoresblock{
+	padding-bottom: 0;
 }
 
 @import "responsive";
