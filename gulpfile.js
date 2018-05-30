@@ -22,6 +22,14 @@ gulp.task('sass', function(){ // Создаем таск Sass
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
+gulp.task('sassProd', function(){ // Создаем таск Sass
+	return gulp.src('app/scss/**/*.+(scss|sass)') // Берем источник
+		.pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console // .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
+		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+});
+
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
 		server: { // Определяем параметры сервера
@@ -74,7 +82,7 @@ gulp.task('images', function() {
 		.pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'images', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'images', 'sassProd', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',

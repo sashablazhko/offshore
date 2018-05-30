@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
   <head>
-    <title>503 Page</title>
+    <title>Offshores List</title>
     <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -130,28 +130,158 @@
           </nav>
         </div>
       </header>
-      <section class="section breadcrumbs-custom">
-        <div class="breadcrumbs-custom-main bg-image bg-gray-700" style="background-image: url(images/bg-image-1.jpg);">
-          <div class="container">
-            <h3 class="breadcrumbs-custom-title">503</h3>
-          </div>
-        </div>
-        <div class="breadcrumbs-custom-aside">
-          <div class="container">
-            <ul class="breadcrumbs-custom-path">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Pages</a></li>
-              <li class="active">503 Page</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="section section-md text-center">
+      <!-- Offshores List-->
+      <section class="section section-md offshoreslist">
         <div class="container">
-          <div class="icon icon-xxl text-secondary mercury-icon-gear"></div>
-          <h2 class="h2-smaller">Service is Temporarily Unavailable</h2>
-          <h6 class="text-gray-500"><span style="max-width: 570px;">Sorry, we're offline right now to make our site even better. Please, come back later and check what we've been up to.</span></h6>
-          <div class="group group-sm group-middle"><a class="button button-gray-800-outline" href="index.html">Go to home page</a><a class="button button-primary" href="contact-us.html">Contact Us</a></div>
+          <form class="form-creative-outer">
+            <div class="form-layout-search form-lg">
+              <div class="form-wrap form-wrap-icon">
+                <input class="form-input" id="form-employer" type="text" name="employer" data-constraints="@Required">
+                <label class="form-label" for="form-employer">Keywords</label><span class="icon fl-bigmug-line-search74"></span>
+              </div>
+              <div class="form-wrap form-wrap-icon form-wrap-select">
+                <!-- Select 2-->
+                <select class="form-input select" id="form-categories" data-placeholder="All Categories" name="category" data-minimum-results-for-search="Infinity" data-constraints="@Selected">
+                  <option label="All Categories"></option>
+                  <option value="1">Web Design</option>
+                  <option value="2">Development</option>
+                  <option value="3">Marketing</option>
+                </select><span class="icon icon-custom-sizing icon-1 fl-bigmug-line-portfolio23"></span>
+              </div>
+              <div class="form-wrap form-wrap-icon form-wrap-select">
+                <!-- Select 2-->
+                <select class="form-input select" id="form-region" data-placeholder="All Regions" name="region" data-minimum-results-for-search="Infinity" data-constraints="@Selected">
+                  <option label="All Regions"></option>
+                  <option value="1">Seattle</option>
+                  <option value="2">Miami</option>
+                  <option value="3">Chicago</option>
+                </select><span class="icon fl-bigmug-line-big104"></span>
+              </div>
+              <div class="form-wrap form-wrap-button">
+                <button class="button button-lg button-primary" type="submit">Search</button>
+              </div>
+            </div>
+          </form>
+          <div class="table-job-offers-outer">
+            <table class="table-job-offers table-responsive">
+              <tr>
+                <td class="table-job-offers-date"><span>1 hour ago</span></td>
+                <td class="table-job-offers-main">
+                  <!-- Company Light-->
+                  <article class="company-light">
+                    <figure class="company-light-figure"><img class="company-light-image" src="images/company-1-52x52.png" alt=""/>
+                    </figure>
+                    <div class="company-light-main">
+                      <h5 class="company-light-title"><a href="job-details.html">Senior UX Designer</a></h5>
+                      <p>StarArt, New York, NY, USA</p>
+                    </div>
+                  </article>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-sm text-primary mdi mdi-cash"></span><span>$25–$35 \ hour</span></div>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-1 text-primary mdi mdi-map-marker"></span><span>New York, NY, USA</span></div>
+                </td>
+                <td class="table-job-offers-badge"><span class="badge">Full Time</span></td>
+              </tr>
+              <tr>
+                <td class="table-job-offers-date"><span>1 day ago</span></td>
+                <td class="table-job-offers-main">
+                  <!-- Company Light-->
+                  <article class="company-light">
+                    <figure class="company-light-figure"><img class="company-light-image" src="images/company-2-53x46.png" alt=""/>
+                    </figure>
+                    <div class="company-light-main">
+                      <h5 class="company-light-title"><a href="job-details.html">Marketing Director</a></h5>
+                      <p>UpBook, Saint-Etienne, France</p>
+                    </div>
+                  </article>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-sm text-primary mdi mdi-cash"></span><span>$45–$53 \ hour</span></div>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-1 text-primary mdi mdi-map-marker"></span><span>Saint-Etienne, France</span></div>
+                </td>
+                <td class="table-job-offers-badge"><span class="badge badge-secondary">Part Time</span></td>
+              </tr>
+              <tr>
+                <td class="table-job-offers-date"><span>1 day ago</span></td>
+                <td class="table-job-offers-main">
+                  <!-- Company Light-->
+                  <article class="company-light">
+                    <figure class="company-light-figure"><img class="company-light-image" src="images/company-3-42x42.png" alt=""/>
+                    </figure>
+                    <div class="company-light-main">
+                      <h5 class="company-light-title"><a href="job-details.html">Front End Developer</a></h5>
+                      <p>MediaLab, Derry, United Kingdom</p>
+                    </div>
+                  </article>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-sm text-primary mdi mdi-cash"></span><span>$25–$43 \ hour</span></div>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-1 text-primary mdi mdi-map-marker"></span><span>Derry, United Kingdom</span></div>
+                </td>
+                <td class="table-job-offers-badge"><span class="badge badge-tertiary">Freelance</span></td>
+              </tr>
+              <tr>
+                <td class="table-job-offers-date"><span>1 day ago</span></td>
+                <td class="table-job-offers-main">
+                  <!-- Company Light-->
+                  <article class="company-light">
+                    <figure class="company-light-figure"><img class="company-light-image" src="images/company-4-40x43.png" alt=""/>
+                    </figure>
+                    <div class="company-light-main">
+                      <h5 class="company-light-title"><a href="job-details.html">Website Designer</a></h5>
+                      <p>Creator, Los Angeles, CA, USA</p>
+                    </div>
+                  </article>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-sm text-primary mdi mdi-cash"></span><span>$15–$43 \ hour</span></div>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-1 text-primary mdi mdi-map-marker"></span><span>Los Angeles, CA, USA</span></div>
+                </td>
+                <td class="table-job-offers-badge"><span class="badge">Full Time</span></td>
+              </tr>
+              <tr>
+                <td class="table-job-offers-date"><span>1 day ago</span></td>
+                <td class="table-job-offers-main">
+                  <!-- Company Light-->
+                  <article class="company-light">
+                    <figure class="company-light-figure"><img class="company-light-image" src="images/company-5-52x52.png" alt=""/>
+                    </figure>
+                    <div class="company-light-main">
+                      <h5 class="company-light-title"><a href="job-details.html">Restaurant Dishwasher</a></h5>
+                      <p>Camping, Stockholm, Sweden</p>
+                    </div>
+                  </article>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-sm text-primary mdi mdi-cash"></span><span>$10–$20 \ hour</span></div>
+                </td>
+                <td class="table-job-offers-meta">
+                  <div class="object-inline"><span class="icon icon-1 text-primary mdi mdi-map-marker"></span><span>Stockholm, Sweden</span></div>
+                </td>
+                <td class="table-job-offers-badge"><span class="badge badge-secondary">Part Time</span></td>
+              </tr>
+            </table>
+          </div>
+          <!-- Bootstrap Pagination-->
+          <nav class="pagination-outer text-center" aria-label="Page navigation">
+            <div class="pagination">
+              <div class="page-item page-item-control"><a class="page-link" href="#" aria-label="Previous">Prev</a></div>
+              <div class="page-item"><a class="page-link" href="#">1</a></div>
+              <div class="page-item"><a class="page-link" href="#">2</a></div>
+              <div class="page-item active"><span class="page-link">3</span></div>
+              <div class="page-item"><a class="page-link" href="#">4</a></div>
+              <div class="page-item page-item-control"><a class="page-link" href="#" aria-label="Next">Next</a></div>
+            </div>
+          </nav>
         </div>
       </section>
       <!-- Page Footer-->
@@ -327,5 +457,5 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/libs.js"></script>
     <script src="js/common.js"></script>
-  </body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+  </body>
 </html>

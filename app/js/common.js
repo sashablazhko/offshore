@@ -1846,7 +1846,24 @@
             });
 
       }
-    }
+		}
+		
+		var status = false;
+    $(".footer-offshores-btn").click(function(e) {
+			e.preventDefault();
+        if (status != true) {
+            $('.footer-offshores-list').css({'overflow':'auto', 'height':'auto'});
+            $('.footer-offshores-btn .fa-minus').css('display', 'inline-block');
+            $('.footer-offshores-btn .fa-plus').css('display', 'none');
+            status = true;
+        } else {
+            $('.footer-offshores-list').css({'overflow':'hidden', 'height':'70'});
+            $('.footer-offshores-btn .fa-plus').css('display', 'inline-block');
+            $('.footer-offshores-btn .fa-minus').css('display', 'none');
+            status = false;
+        }
+
+    });
 
 	});
 }());
