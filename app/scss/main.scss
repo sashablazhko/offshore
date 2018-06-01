@@ -1708,6 +1708,11 @@ html .list-inline-md > * {
 	height: 100%;
 }
 
+.custom-contacts .lp-item p,
+.custom-contacts .box-info-3 p{
+	margin-top: 5px;
+}
+
 .lp-item:hover {
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.22);
 }
@@ -2589,6 +2594,10 @@ html a.icon-filled-brand:active, html a.icon-filled-brand:focus, html a.icon-fil
 	white-space: nowrap;
 }
 
+.offshoreslist .form-creative-outer .form-wrap-select{
+	max-width: none;
+}
+
 .offshoreslist .object-inline .object-inline-discription{
 	word-wrap: normal;
 }
@@ -2630,6 +2639,10 @@ html a.icon-filled-brand:active, html a.icon-filled-brand:focus, html a.icon-fil
 
 .offshoresblock .post-classic h5{
 	font-weight: bold;
+}
+
+.postpopular .post-classic{
+	height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -10687,7 +10700,6 @@ html.tablet .ui-to-top {
 
 .rd-navbar-brand a {
 	display: block;
-	background-color: #fec200;
 }
 
 .rd-nav-link {
@@ -18423,11 +18435,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 	&-wrapper{
 		background-color: #4f555d;
+		height: 0;
+		overflow: hidden;
 	}
 
 	&-list{
 		margin: 25px 0;
-		height: 70px;
 		overflow: hidden;
 
 		&-item{
@@ -18460,7 +18473,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	margin-bottom: 20px;
 }
 #summary p.collapse:not(.show) {
-	height: 259px !important;
+	height: 44px !important;
 	overflow: hidden;
 
 	display: -webkit-box;
@@ -18471,7 +18484,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 #summary p.collapsing {
-	min-height: 259px !important;
+	min-height: 44px !important;
 }
 
 #summary a.collapsed:after,
@@ -18516,12 +18529,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	content: 'Скрыть текст';
 }
 
+.custom-slider{
+	padding-top: 0;
+}
+
+.custom-news{
+	margin-bottom: 95px;
+
+	& .post-modern{
+		height: 100%;
+	}
+}
+
 .offshoreslist{
 	padding-top: 0;
 }
 
-.offshoresblock{
-	padding-bottom: 0;
+.questionmail{
+	padding-top: 0;
+}
+
+.seotext{
+	padding-top: 0;
+}
+
+.btnandcapcha{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.contactsinfo-subtitle{
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
 }
 
 @import "responsive";

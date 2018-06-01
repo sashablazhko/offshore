@@ -23,4 +23,14 @@
   .footer-offshores-list-item{
     width: 100%;
   }
+
+  .btnandcapcha{
+    
+    & span{
+      order: 1;
+    }
+    & button{
+      order: 2;
+    }
+  }
 }

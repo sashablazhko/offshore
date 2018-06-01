@@ -1,9 +1,3 @@
-// $(function() {
-
-	// Пользовательские функции
-
-// });
-
 "use strict";
 (function () {
 	// Global variables
@@ -916,7 +910,7 @@
 		}
 
     $('[data-rd-navbar-toggle]').on('click', function () {
-      console.log($(this).hasClass('active'));
+      // console.log($(this).hasClass('active'));
       if(!$(this).hasClass('active')) {
         if(isSafari && $(this).hasClass('rd-navbar-popup-toggle')) {
          document.querySelector('.page').style.position = 'relative';
@@ -1852,12 +1846,12 @@
     $(".footer-offshores-btn").click(function(e) {
 			e.preventDefault();
         if (status != true) {
-            $('.footer-offshores-list').css({'overflow':'auto', 'height':'auto'});
+            $('.footer-offshores-wrapper').css({'overflow':'auto', 'height':'auto'});
             $('.footer-offshores-btn .fa-minus').css('display', 'inline-block');
             $('.footer-offshores-btn .fa-plus').css('display', 'none');
             status = true;
         } else {
-            $('.footer-offshores-list').css({'overflow':'hidden', 'height':'70'});
+            $('.footer-offshores-wrapper').css({'overflow':'hidden', 'height':'0'});
             $('.footer-offshores-btn .fa-plus').css('display', 'inline-block');
             $('.footer-offshores-btn .fa-minus').css('display', 'none');
             status = false;
