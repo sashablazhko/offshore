@@ -2635,10 +2635,21 @@ html a.icon-filled-brand:active, html a.icon-filled-brand:focus, html a.icon-fil
 
 .offshoresblock .post-classic{
 	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	& a{
+		margin-top: 20px;
+	}
 }
 
 .offshoresblock .post-classic h5{
 	font-weight: bold;
+}
+
+.offshoresblock .post-classic-media{
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.09);
 }
 
 .postpopular .post-classic{
@@ -18533,6 +18544,32 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	padding-top: 0;
 }
 
+.custom-slider .slick-2-item-figure{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-slider .slick-slider-2 .slick-2-item-figure a{
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.09);
+	width: 96%;
+}
+
+.custom-slider .slick-slider-2 .slick-2-item-figure img{
+	position: relative;
+	height: auto;
+}
+
+.custom-slider .slick-slide-figure{
+	display: flex;
+}
+
+.custom-slider .slick-slider-2 .carousel-child .slick-slide-figure img{
+	position: relative;
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.09);
+}
+
 .custom-news{
 	margin-bottom: 95px;
 
@@ -18563,6 +18600,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	font-weight: bold;
 	font-size: 16px;
 	color: #000;
+}
+
+.footerseo-title{
+	margin-top: 25px !important;
+}
+
+.footerseo-text{
+	margin: 25px 0 1px;
+}
+
+.footerseo-subtitle,
+.footerseo-text p{
+	color: #fff !important;
+}
+
+.custom-button{
+	color: #fff !important;
+}
+
+.offshoreslist img{
+	box-shadow: 0 0 13px rgba(0, 0, 0, 0.09);
+}
+
+.offshoreslist .custom-button{
+	margin-top: 8px;
 }
 
 @import "responsive";

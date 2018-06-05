@@ -17,11 +17,19 @@
   .footer-offshores-list-item{
     width: 49%;
   }
+
+  .custom-slider .slick-2-item-figure{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) and (min-width: 320px){
   .footer-offshores-list-item{
     width: 100%;
+  }
+
+  .custom-slider .slick-2-item-figure{
+    display: none;
   }
 
   .btnandcapcha{

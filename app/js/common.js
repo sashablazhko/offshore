@@ -1846,7 +1846,7 @@
     $(".footer-offshores-btn").click(function(e) {
 			e.preventDefault();
         if (status != true) {
-            $('.footer-offshores-wrapper').css({'overflow':'auto', 'height':'auto'});
+            $('.footer-offshores-wrapper').css({'overflow':'none', 'height':'auto'});
             $('.footer-offshores-btn .fa-minus').css('display', 'inline-block');
             $('.footer-offshores-btn .fa-plus').css('display', 'none');
             status = true;
